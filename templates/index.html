@@ -21,9 +21,9 @@
             
             <div class="diagnosis">
                 {% if has_tumor %}
-                <p class="alert danger">Probabilidad de Tumor: {{ confidence }}</p>
+                <p class="alert danger">!CUIDADO TUMOR DETECTADO¡ ( Precision: {{ confidence }} )</p>
                 {% else %}
-                <p class="alert success">Probabilidad de Tumor: {{ confidence }}</p>
+                <p class="alert success">NINGUN TUMOR DETECTADO ( Precision: {{ confidence }} )</p>
                 {% endif %}
             </div>
 
